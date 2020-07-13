@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 highlight clear
 if exists("syntax_on")
   syntax reset
@@ -10,10 +12,9 @@ runtime colors/codedark.vim
 let g:colors_name="codedark_simon"
 let g:airline_theme = 'codedark'
 
-highlight TabLineFill ctermbg=239
-highlight TabLine ctermbg=239
-highlight CursorLine ctermbg=236
-highlight DiffAdd ctermbg=238
-highlight DiffChange ctermbg=238
-highlight DiffDelete ctermbg=238
-highlight DiffText ctermbg=241  cterm=bold
+highlight DiffAdd ctermbg=235 ctermfg=108 cterm=reverse guibg=#262626 guifg=#87af87 gui=reverse
+highlight DiffChange guibg=#1e1e1e
+highlight DiffDelete ctermbg=235 ctermfg=131 cterm=reverse guibg=#262626 guifg=#af5f5f gui=reverse
+highlight DiffText guibg=#c2c2c2 guifg=black
+
+highlight CursorLine guibg=#2e2e2e
